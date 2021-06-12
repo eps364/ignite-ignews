@@ -67,9 +67,9 @@ export default function Posts({ postsPagination }: PostsProps) {
         <title>Posts | Ignews</title>
       </Head>
       <main className={styles.container}>
-        <div className={styles.posts}>
+        <div className={styles.post}>
           {posts.map(post => (
-            <Link href={`/posts/${post.slug}`} key={post.slug}>
+            <Link href={`/posts/preview/${post.slug}`} key={post.slug}>
               <a>
                 <time>
                   <FiCalendar /> {post.updatedAt}
